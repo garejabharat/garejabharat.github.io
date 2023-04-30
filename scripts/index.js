@@ -165,26 +165,33 @@
 // }
 
 // totalBox.textContent = 'Total: $' + total.toFixed(2);
-// Add your code here
-const section = document.querySelector('section');
-const birds = ['Parrots', 'Falcons', 'Eagles', 'Emus', 'Caracaras', 'Egrets'];
 
-// Add your code here
-const Eagleindex = birds.indexOf('Eagles');
-console.log(Eagleindex);
+// //***************** */
+// const section = document.querySelector('section');
+// const birds = ['Parrots', 'Falcons', 'Eagles', 'Emus', 'Caracaras', 'Egrets'];
 
-const removeEgle = birds.splice(Eagleindex, 1);
-console.log(birds);
-const checkLetter = birds.join(',');
-for (let newlet of checkLetter) {
-  const startletter = newlet.startsWith('E');
-  console.log(startletter);
+// // Add your code here
+// const Eagleindex = birds.indexOf('Eagles');
+// console.log(Eagleindex);
+
+// const removeEgle = birds.splice(Eagleindex, 1);
+// console.log(birds);
+// const checkLetter = birds.join(',');
+// for (let newlet of checkLetter) {
+//   const startletter = newlet.startsWith('E');
+//   console.log(startletter);
+// }
+// // Don't edit the code below here!
+
+// section.innerHTML = ' ';
+
+// const para1 = document.createElement('p');
+// para1.textContent = '';
+
+// section.appendChild(para1);
+
+function logKey(event) {
+  console.log(`You pressed "${event.key}".`);
 }
-// Don't edit the code below here!
-
-section.innerHTML = ' ';
-
-const para1 = document.createElement('p');
-para1.textContent = '';
-
-section.appendChild(para1);
+const inputab = document.querySelector('input');
+inputab.addEventListener('keydown', logKey);
